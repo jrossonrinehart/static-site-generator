@@ -7,7 +7,7 @@ class TestHTMLNode(unittest.TestCase):
     #testing that props_to_html returns None when props is not given
     def test_no_props(self):
         testHTMLNode = HTMLNode("h1","test value")
-        self.assertEqual(testHTMLNode.props_to_html(), None)
+        self.assertEqual(testHTMLNode.props_to_html(), "")
     
     #testing props_to_html
     def test_props_to_html(self):
